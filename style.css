@@ -1,0 +1,90 @@
+:root{
+    --tam_botao: 35px;
+    --cinza_escuro: rgb(30,30,30);
+    --cinza_claro: rgb(86, 86, 86);
+    --azul_claro: rgba(158, 198, 255, 0.5);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+
+}
+body {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.calculadora{
+    border: solid 5px white;
+    border-radius: 20px;
+    width: auto;
+    height: 320px;
+}
+#resultado{
+    background-color: rgb(89, 89, 89);
+    border-radius: 15px ;
+    height: 30%;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+}
+table{
+    padding: 5px 2px;
+}
+button{
+    width: var(--tam_botao);
+    height: var(--tam_botao);
+    border-radius: 10px;
+    background-color: var(--cinza_claro);
+    color: white;
+    font-size: 16px;
+    transition: .1s ease-in-out;
+    border-style: none;
+    margin: 2px;
+    user-select: none;
+}
+button:active{
+    background-color: white;
+    color: var(--cinza_escuro);
+}
+.reset{
+    background-color: rgb(172, 255, 172);
+    color: black;
+}
+.opera, .equal{
+    background-color: var(--azul_claro);
+}
+.equal{
+    height: 75px;
+}
+.zero{
+    width: 75px;
+}
+.link{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(137, 43, 226, 0.2);
+    padding: 12px;
+    color: white;
+    border-radius: 10px;
+    border: solid 2px transparent;
+    transition: ease-in-out .3s;
+}
+.link:hover{
+    border: solid 2px blueviolet;
+    box-shadow: 0 0 12px rgba(137, 43, 226);
+}
+.link_container{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
